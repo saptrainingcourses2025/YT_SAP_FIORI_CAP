@@ -1,0 +1,33 @@
+###
+
+GET http://localhost:4004/odata/v4/catalog/Books
+
+
+###
+POST http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{
+  "title": "Harry Page",
+  "author": "Oliver",
+  "price": 19,
+  "stock": 20
+}
+
+###
+PATCH http://localhost:4004/odata/v4/catalog/Books(1bad0d18-87be-40c8-9cc1-08626f0bda01)
+Content-Type: application/json
+
+{
+  "title": "Ramayanam",
+  "author": "Vaalmeegi",
+  "price": 101.88,
+  "stock": 200
+}
+
+###
+DELETE http://localhost:4004/odata/v4/catalog/Books(1bad0d18-87be-40c8-9cc1-08626f0bda01)
+
+###
+GET http://localhost:4004/odata/v4/catalog/Books(1bad0d18-87be-40c8-9cc1-08626f0bda01)
+
